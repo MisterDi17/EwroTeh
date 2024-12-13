@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Цвет для выделенного элемента -->
+    <item android:color="#63A0FB" android:state_checked="false" />
+    <!-- Цвет для невыделенного элемента (обычно прозрачный) -->
+    <item android:color="#FFFFFF" android:state_checked="true"  />
+</selector>

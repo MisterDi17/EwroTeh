@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.EditGoodsInStockFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/shape_backround_edit"
+        android:layout_marginBottom="-350dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#367CB8"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Редактирование товара"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etGoodInStockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Название товара"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etGoodCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:hint="Количество товара"
+        android:textColor="@color/white"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etGoodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:hint="Стоимость товара"
+        android:textColor="@color/white"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/etGoodTypeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Типа товара"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btSelectGoodTypeAndSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#3AD3CE"
+        android:textSize="12dp"
+        android:text="Выбрать тип товара и сохранить" />
+
+    <Button
+        android:id="@+id/btSaveGoodInStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#2EB464"
+        android:textSize="12dp"
+        android:text="Сохранить" />
+</LinearLayout>
+
+</LinearLayout>
