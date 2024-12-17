@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Касса"
+    <item
         android:id="@+id/cashRegister"
-        android:icon="@drawable/baseline_currency_ruble_24"/>
+        android:icon="@drawable/baseline_currency_ruble_24"
+        android:title="Заказ" />
     <item android:title="Склад"
         android:id="@+id/warehouse"
         android:icon="@drawable/baseline_warehouse_24"/>

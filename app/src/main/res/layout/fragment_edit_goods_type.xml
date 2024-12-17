@@ -12,7 +12,7 @@
         android:layout_height="40dp"
         android:background="@drawable/shape_backround_edit"
         android:gravity="center"
-        android:text="Редактирование типа товара"
+        android:text="Редактирование типа изделия"
         android:textSize="24sp"
         android:textColor="@color/white"/>
 
@@ -24,7 +24,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:ems="10"
-        android:hint="Название типа товара"
+        android:hint="Название типа изделия"
         android:inputType="text" />
 
     <Button

@@ -19,7 +19,7 @@
         android:background="#367CB8"
         android:textColor="@color/white"
         android:gravity="center"
-        android:text="Редактирование товара"
+        android:text="Редактирование изделия"
         android:textSize="24sp" />
 
     <EditText
@@ -30,7 +30,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:ems="10"
-        android:hint="Название товара"
+        android:hint="Название изделия"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:inputType="text" />
@@ -44,7 +44,7 @@
         android:layout_marginRight="15dp"
         android:ems="10"
         android:textColorHint="@color/white"
-        android:hint="Количество товара"
+        android:hint="Количество изделия"
         android:textColor="@color/white"
         android:inputType="number" />
 
@@ -57,7 +57,7 @@
         android:layout_marginRight="15dp"
         android:ems="10"
         android:textColorHint="@color/white"
-        android:hint="Стоимость товара"
+        android:hint="Стоимость изделия"
         android:textColor="@color/white"
         android:inputType="number|numberDecimal" />
 
@@ -70,7 +70,7 @@
         android:layout_marginRight="15dp"
         android:ems="10"
         android:enabled="false"
-        android:hint="Типа товара"
+        android:hint="Типа изделия"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:inputType="text" />
@@ -84,7 +84,7 @@
         android:layout_marginTop="15dp"
         android:backgroundTint="#3AD3CE"
         android:textSize="12dp"
-        android:text="Выбрать тип товара и сохранить" />
+        android:text="Выбрать тип изделия и сохранить" />
 
     <Button
         android:id="@+id/btSaveGoodInStock"

@@ -23,7 +23,7 @@ class WarehouseFragment : Fragment() {
         viewPager = view.findViewById(R.id.viewPager)
         val adapter = TabLayoutAdapter(this)
         viewPager.adapter = adapter
-        val tabName = arrayOf<String>("Товары на складе", "Типы товаров")
+        val tabName = arrayOf<String>("Изделия на складе", "Типы изделия")
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabName[position].toString()
         }.attach()

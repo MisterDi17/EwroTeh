@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -23,6 +22,8 @@ class GoodsInCartAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvGoodsInStockName = itemView.findViewById<TextView>(R.id.tvGoodsInStockName)
         val tvGoodsAddedCount = itemView.findViewById<TextView>(R.id.tvGoodsAddedCount)
+        val tvGoodsInStockPrice = itemView.findViewById<TextView>(R.id.tvGoodsInStockPrice)
+
         val btRemove = itemView.findViewById<ImageView>(R.id.imRemove)
         val btAdd = itemView.findViewById<ImageView>(R.id.imAdd)
     }
@@ -40,6 +41,7 @@ class GoodsInCartAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var goodsInStock = goodsInStockList[position]
         holder.tvGoodsInStockName.text = goodsInStock.name
+        holder.tvGoodsInStockPrice.text = goodsInStock.price.toString()
         holder.tvGoodsAddedCount.text = repository.getGoodsCountInCart(goodsInStock.goodId, saleId).toString()
         holder.btAdd.setOnClickListener {
             val success = repository.addGoodsToCart(goodsInStock.goodId, saleId)

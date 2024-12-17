@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EwroTeh"
+rootProject.name = "UralStall"
 include(":app")
  
